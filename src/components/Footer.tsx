@@ -161,7 +161,7 @@ export const Footer = () => {
 
           <div className="flex items-center space-x-6">
             <p className="text-muted-foreground text-sm">
-              © 2025 All rights reserved.
+              © {new Date().getFullYear()}  All rights reserved.
             </p>
             
             {/* Back to Top Button */}
