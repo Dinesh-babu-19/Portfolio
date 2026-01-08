@@ -159,6 +159,7 @@ const ProjectCard = ({ project, index }: { project: typeof projects[0]; index: n
             <Button
               size="sm"
               className="bg-gradient-primary hover:shadow-glow transition-all duration-300 flex-1"
+              onClick={() => window.open(project.demoUrl, '_blank', 'noopener,noreferrer')}
             >
               <Play className="mr-2 h-4 w-4" />
               Live Demo
@@ -167,6 +168,7 @@ const ProjectCard = ({ project, index }: { project: typeof projects[0]; index: n
               size="sm"
               variant="outline"
               className="border-border hover:bg-muted/20"
+              onClick={() => window.open(project.githubUrl, '_blank', 'noopener,noreferrer')}
             >
               <Github className="mr-2 h-4 w-4" />
               Code
